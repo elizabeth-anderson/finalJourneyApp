@@ -14,6 +14,7 @@
 		3F5DA0AE1EA517E9002AFC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DA0AC1EA517E9002AFC05 /* LaunchScreen.storyboard */; };
 		3F5DA0B91EA517E9002AFC05 /* JourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0B81EA517E9002AFC05 /* JourneyTests.swift */; };
 		3F5DA0C41EA517E9002AFC05 /* JourneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0C31EA517E9002AFC05 /* JourneyUITests.swift */; };
+		3F7674CC1EA7B63400BD93CD /* diaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7674CB1EA7B63400BD93CD /* diaryClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3F5DA0BF1EA517E9002AFC05 /* JourneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JourneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5DA0C31EA517E9002AFC05 /* JourneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyUITests.swift; sourceTree = "<group>"; };
 		3F5DA0C51EA517E9002AFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7674CB1EA7B63400BD93CD /* diaryClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = diaryClass.swift; path = ../diaryClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3F5DA0AA1EA517E9002AFC05 /* Assets.xcassets */,
 				3F5DA0AC1EA517E9002AFC05 /* LaunchScreen.storyboard */,
 				3F5DA0AF1EA517E9002AFC05 /* Info.plist */,
+				3F7674CB1EA7B63400BD93CD /* diaryClass.swift */,
 			);
 			path = Journey;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7674CC1EA7B63400BD93CD /* diaryClass.swift in Sources */,
 				3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */,
 				3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				3F5DA0CA1EA517E9002AFC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5DA0CB1EA517E9002AFC05 /* Build configuration list for PBXNativeTarget "JourneyTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				3F5DA0CD1EA517E9002AFC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5DA0CE1EA517E9002AFC05 /* Build configuration list for PBXNativeTarget "JourneyUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				3F5DA0D01EA517E9002AFC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
