@@ -11,11 +11,21 @@ import UIKit
 class diaryClass: NSObject {
     var location = ""
     var date = ""
+    var text = ""
+    var image = UIImage(named: "defualt")
     
+    init(Location: String, Date: String, Text: String, Image: UIImage)
+    {
+        location = Location
+        date = Date
+        text = Text
+        image = Image
+        
+    }
     init(Location: String, Date: String)
     {
-        location = location
         date = Date
+        location = Location
     }
 
 }
