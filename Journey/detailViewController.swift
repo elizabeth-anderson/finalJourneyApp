@@ -13,12 +13,10 @@ class detailViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var dateTextField: UITextField!
-    
     @IBOutlet weak var myTextView: UITextView!
     
     var diaryDetail:diaryClass!
-    
-     let imagePicker = UIImagePickerController()
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad()
     {
@@ -32,6 +30,7 @@ class detailViewController: UIViewController, UIImagePickerControllerDelegate, U
         imagePicker.delegate = self
       
     }
+    
     @IBAction func saveButton(_ sender: Any)
     {
         diaryDetail.location = locationTextField.text!
@@ -39,6 +38,7 @@ class detailViewController: UIViewController, UIImagePickerControllerDelegate, U
         diaryDetail.text = myTextView.text!
         diaryDetail.date = dateTextField.text!
     }
+    
     func getPhotoLibrary()
     {
         imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
@@ -55,6 +55,7 @@ class detailViewController: UIViewController, UIImagePickerControllerDelegate, U
             self.myImageView.image = selectedImage
         }
     }
+    
     @IBAction func cameraButton(_ sender: Any)
     {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
@@ -66,8 +67,8 @@ class detailViewController: UIViewController, UIImagePickerControllerDelegate, U
         {
             getPhotoLibrary()
         }
-
     }
+    
     @IBAction func photoLibraryButton(_ sender: Any)
     {
         getPhotoLibrary()
