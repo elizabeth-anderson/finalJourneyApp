@@ -14,8 +14,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var myTableView: UITableView!
     
     var myDiaryObject : [diaryClass] = []
+        
 
     override func viewDidLoad()
+    
+    //self.view.backgroundColor = UIColor(patternImage:#imageLiteral(resourceName: "background"))
     {
         super.viewDidLoad()
         myDiaryObject.append(diaryClass(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))

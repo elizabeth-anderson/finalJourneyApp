@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4035221EB24AB3001F8F9C /* MapPins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4035211EB24AB3001F8F9C /* MapPins.swift */; };
 		3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */; };
 		3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A51EA517E9002AFC05 /* ViewController.swift */; };
 		3F5DA0A91EA517E9002AFC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A71EA517E9002AFC05 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F4035211EB24AB3001F8F9C /* MapPins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPins.swift; sourceTree = "<group>"; };
 		3F5DA0A01EA517E9002AFC05 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5DA0A51EA517E9002AFC05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */,
 				3F5DA0A51EA517E9002AFC05 /* ViewController.swift */,
 				3F5DA0A71EA517E9002AFC05 /* Main.storyboard */,
+				3F4035211EB24AB3001F8F9C /* MapPins.swift */,
 				3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */,
 				3F5DA0AA1EA517E9002AFC05 /* Assets.xcassets */,
 				3F5DA0AC1EA517E9002AFC05 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				3F7674CC1EA7B63400BD93CD /* diaryClass.swift in Sources */,
 				3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */,
 				3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */,
+				3F4035221EB24AB3001F8F9C /* MapPins.swift in Sources */,
 				3F7674CE1EA7B8EA00BD93CD /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
