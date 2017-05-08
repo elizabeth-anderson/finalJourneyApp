@@ -91,20 +91,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+        if segue.identifier == "infoSegue"
+            
+        {
         let detailView = segue.destination as! detailViewController
         
         let selectedRow = myTableView.indexPathForSelectedRow?.row
         
         detailView.diaryDetail = myDiaryObject[selectedRow!]
+         }
+        else if segue.identifier == "mapSegue"
+        {
+            let viewController = segue.destination as! MapPins
+            
+        }
+        
     }
+
     
     override func viewDidAppear(_ animated: Bool)
     {
         myTableView.reloadData()
     }
-
- 
-
 
 }
 

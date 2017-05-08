@@ -9,14 +9,37 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate
+{
 
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //persistent data
+        let standardDefaults = UserDefaults.standard
+        
+        //Key | Value
+        
+        standardDefaults.register(defaults: ["journal" : 300])
+        
+        var journal = standardDefaults.string(forKey: "journal")
+        
+        print("journal is \(journal)")
+        
+        
+        
+        journal = standardDefaults.string(forKey: "journal")
+        
+        print("new journal is \(journal)")
+        
+        
         return true
+        
+    
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

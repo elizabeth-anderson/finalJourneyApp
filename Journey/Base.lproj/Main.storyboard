@@ -23,15 +23,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="My Cell" id="A2H-qj-BFe" userLabel="My Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="My Cell" textLabel="2fn-3j-03u" imageView="qPa-p3-vIY" style="IBUITableViewCellStyleDefault" id="A2H-qj-BFe" userLabel="My Cell">
                                         <rect key="frame" x="0.0" y="92" width="418" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A2H-qj-BFe" id="mRN-pO-58q">
-                                            <frame key="frameInset" width="418" height="44"/>
+                                            <frame key="frameInset" width="418" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2fn-3j-03u">
+                                                    <frame key="frameInset" minX="140" width="263" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="indiana" id="qPa-p3-vIY">
+                                                    <frame key="frameInset" minX="15" width="110" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="T4R-HM-7ar" kind="show" id="uZH-MY-Eb0"/>
+                                            <segue destination="T4R-HM-7ar" kind="show" identifier="infoSegue" id="uZH-MY-Eb0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -46,7 +59,7 @@
                     <navigationItem key="navigationItem" id="vaF-7b-4bo">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="p4P-yy-YKo">
                             <connections>
-                                <segue destination="j2S-AQ-l3v" kind="show" id="rDf-cP-ij8"/>
+                                <segue destination="j2S-AQ-l3v" kind="show" identifier="mapSegue" id="rDf-cP-ij8"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lt5-h8-FUG">
@@ -201,6 +214,7 @@
     </scenes>
     <resources>
         <image name="addPhoto" width="128" height="128"/>
+        <image name="indiana" width="359" height="140"/>
         <image name="saveButton" width="128" height="128"/>
         <image name="takePhoto-1" width="128" height="128"/>
     </resources>
