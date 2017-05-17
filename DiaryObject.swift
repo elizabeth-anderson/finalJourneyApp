@@ -8,7 +8,8 @@
 
 import UIKit
 
-class diaryClass: NSObject {
+class DiaryClass: NSObject {
+    
     var location = ""
     var date = ""
     var text = ""
@@ -22,10 +23,11 @@ class diaryClass: NSObject {
         image = Image
         
     }
+    
     init(Location: String, Date: String)
     {
         date = Date
         location = Location
     }
-
+    
 }

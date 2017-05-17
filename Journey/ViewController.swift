@@ -13,17 +13,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 {
     @IBOutlet weak var myTableView: UITableView!
     
-    var myDiaryObject : [diaryClass] = []
-        
-
+    var myDiaryObject : [DiaryClass] = []
+    
     override func viewDidLoad()
     
     //self.view.backgroundColor = UIColor(patternImage:#imageLiteral(resourceName: "background"))
     {
         super.viewDidLoad()
-        myDiaryObject.append(diaryClass(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))
-        myDiaryObject.append(diaryClass(Location: "Indiana", Date: "October 8, 2015", Text: "i love indiana", Image: UIImage(named: "indiana")!))
-        
+        myDiaryObject.append(DiaryClass(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))
+        myDiaryObject.append(DiaryClass(Location: "Indiana", Date: "October 8, 2015", Text: "i love indiana", Image: UIImage(named: "indiana")!))
+    }
+    
+    func getDiaryObject() -> [DiaryClass]
+    {
+        return myDiaryObject
     }
 
     @IBAction func addButtonTapped(_ sender: Any)
@@ -54,7 +57,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let dateTextField = alert.textFields?[1]
                 
                 
-                self.myDiaryObject.append(diaryClass(Location: (locationTextField?.text)!, Date: (dateTextField?.text)!))
+                self.myDiaryObject.append(DiaryClass(Location: (locationTextField?.text)!, Date: (dateTextField?.text)!))
                 
                 self.myTableView.reloadData()
             }
@@ -89,6 +92,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             myTableView.reloadData()
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "infoSegue"
@@ -102,8 +106,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
          }
         else if segue.identifier == "mapSegue"
         {
-            let viewController = segue.destination as! MapPins
-            
+            let mapViewController = segue.destination as! MapViewController
+            mapViewController.myDiaryObjectMap = myDiaryObject
         }
         
     }
