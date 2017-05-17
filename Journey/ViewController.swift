@@ -79,6 +79,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = myDiaryObject[indexPath.row].location
         
         cell.detailTextLabel?.text = myDiaryObject[indexPath.row].date
+        cell.imageView?.image = myDiaryObject[indexPath.row].image
+        
         
         return cell
     }
@@ -101,6 +103,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let detailView = segue.destination as! detailViewController
         
         let selectedRow = myTableView.indexPathForSelectedRow?.row
+            
         
         detailView.diaryDetail = myDiaryObject[selectedRow!]
          }
