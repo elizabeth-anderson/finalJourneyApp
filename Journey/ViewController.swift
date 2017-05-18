@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //self.view.backgroundColor = UIColor(patternImage:#imageLiteral(resourceName: "background"))
     {
         super.viewDidLoad()
-        myDiaryObject.append(DiaryClass(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))
+        myDiaryObject.append(DiaryObject(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))
         myDiaryObject.append(DiaryClass(Location: "Indiana", Date: "October 8, 2015", Text: "i love indiana", Image: UIImage(named: "indiana")!))
     }
     

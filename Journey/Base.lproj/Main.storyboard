@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Xv-qp-p5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Xv-qp-p5H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -283,6 +283,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.43929044740000001" green="0.61820318890000003" blue="0.92554211620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="search" id="KH7-X9-kXZ">
+                            <connections>
+                                <segue destination="Wv5-la-UFB" kind="showDetail" identifier="mapsegue" id="Osm-p4-78E"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="vaF-7b-4bo">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="p4P-yy-YKo"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lt5-h8-FUG">
@@ -291,6 +298,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="NO"/>
                     </userDefinedRuntimeAttributes>
@@ -300,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4015" y="90"/>
+            <point key="canvasLocation" x="4026" y="41"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="sKV-A2-M6g">
@@ -419,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5h-TN-Td9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3852" y="-727"/>
+            <point key="canvasLocation" x="4452" y="-698"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Jl-xk-HWT">
