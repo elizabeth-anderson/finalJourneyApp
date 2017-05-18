@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var myDiaryObject : [DiaryClass] = []
     
+  
+    
     override func viewDidLoad()
     
     //self.view.backgroundColor = UIColor(patternImage:#imageLiteral(resourceName: "background"))
@@ -23,6 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         myDiaryObject.append(DiaryClass(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))
         myDiaryObject.append(DiaryClass(Location: "Indiana", Date: "October 8, 2015", Text: "i love indiana", Image: UIImage(named: "indiana")!))
     }
+    
     
     func getDiaryObject() -> [DiaryClass]
     {

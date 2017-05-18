@@ -169,33 +169,6 @@
             </objects>
             <point key="canvasLocation" x="3852" y="89.505247376311857"/>
         </scene>
-        <!--Map Pins-->
-        <scene sceneID="SCo-5V-D4C">
-            <objects>
-                <viewController id="j2S-AQ-l3v" customClass="MapPins" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="R7i-5H-OTa"/>
-                        <viewControllerLayoutGuide type="bottom" id="bmT-Dd-j7f"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qhc-OD-qco" customClass="MKMapView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-PM-bD8">
-                                <rect key="frame" x="67" y="125" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="myMapView" destination="c4l-PM-bD8" id="wvc-26-LGT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ufg-4S-uZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2794" y="-747"/>
-        </scene>
         <!--Map View Controller-->
         <scene sceneID="mCJ-0N-IPs">
             <objects>

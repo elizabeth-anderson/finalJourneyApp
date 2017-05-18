@@ -11,6 +11,7 @@ import Foundation
 class JournalEntry : NSObject, NSCoding
 {
     
+  //  UserDefaults.standard
     struct Keys
     {
         static let VacationLocation = "vacationLocation"
