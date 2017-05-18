@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24378E8F1EC0CB3F00E1134C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24378E8E1EC0CB3F00E1134C /* LogInViewController.swift */; };
+		24378E911EC0CB5000E1134C /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24378E901EC0CB5000E1134C /* RegisterPageViewController.swift */; };
+		24378E931EC0CB6A00E1134C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24378E921EC0CB6A00E1134C /* ViewController2.swift */; };
 		3F4035221EB24AB3001F8F9C /* MapPins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4035211EB24AB3001F8F9C /* MapPins.swift */; };
 		3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */; };
 		3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A51EA517E9002AFC05 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24378E8E1EC0CB3F00E1134C /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		24378E901EC0CB5000E1134C /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		24378E921EC0CB6A00E1134C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		3F4035211EB24AB3001F8F9C /* MapPins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPins.swift; sourceTree = "<group>"; };
 		3F5DA0A01EA517E9002AFC05 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 			children = (
 				3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */,
 				3F5DA0A51EA517E9002AFC05 /* ViewController.swift */,
+				24378E8E1EC0CB3F00E1134C /* LogInViewController.swift */,
+				24378E901EC0CB5000E1134C /* RegisterPageViewController.swift */,
+				24378E921EC0CB6A00E1134C /* ViewController2.swift */,
 				3F5DA0A71EA517E9002AFC05 /* Main.storyboard */,
 				3F4035211EB24AB3001F8F9C /* MapPins.swift */,
 				3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */,
@@ -269,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7674CC1EA7B63400BD93CD /* diaryClass.swift in Sources */,
+				24378E931EC0CB6A00E1134C /* ViewController2.swift in Sources */,
+				24378E911EC0CB5000E1134C /* RegisterPageViewController.swift in Sources */,
 				3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */,
+				24378E8F1EC0CB3F00E1134C /* LogInViewController.swift in Sources */,
 				3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */,
 				3F4035221EB24AB3001F8F9C /* MapPins.swift in Sources */,
 				3F7674CE1EA7B8EA00BD93CD /* detailViewController.swift in Sources */,
