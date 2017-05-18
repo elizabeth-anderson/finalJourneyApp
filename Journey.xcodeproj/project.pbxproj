@@ -16,8 +16,6 @@
 		3F5DA0C41EA517E9002AFC05 /* JourneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0C31EA517E9002AFC05 /* JourneyUITests.swift */; };
 		3F6776871ECB57360032ACE5 /* PersistentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6776861ECB57360032ACE5 /* PersistentData.swift */; };
 		3F7674CE1EA7B8EA00BD93CD /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */; };
-		3FE3460C1ECA446900F08D05 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3460B1ECA446900F08D05 /* MapViewController.swift */; };
-		3FE3460E1ECA47F600F08D05 /* DiaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3460D1ECA47F600F08D05 /* DiaryObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */,
-				3F5DA0A51EA517E9002AFC05 /* ViewController.swift */,
 				24378E8E1EC0CB3F00E1134C /* LogInViewController.swift */,
 				24378E901EC0CB5000E1134C /* RegisterPageViewController.swift */,
 				24378E921EC0CB6A00E1134C /* ViewController2.swift */,
@@ -275,7 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7674CC1EA7B63400BD93CD /* diaryClass.swift in Sources */,
 				24378E931EC0CB6A00E1134C /* ViewController2.swift in Sources */,
 				24378E911EC0CB5000E1134C /* RegisterPageViewController.swift in Sources */,
 				3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */,
