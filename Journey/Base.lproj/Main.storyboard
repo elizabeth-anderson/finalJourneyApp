@@ -246,6 +246,7 @@
                                 <rect key="frame" x="0.0" y="72" width="418" height="607"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.71683669090270996" green="0.86368292570114136" blue="0.93642467260360718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="My Cell" textLabel="2fn-3j-03u" imageView="qPa-p3-vIY" style="IBUITableViewCellStyleDefault" id="A2H-qj-BFe" userLabel="My Cell">
                                         <rect key="frame" x="0.0" y="28" width="418" height="44"/>
@@ -266,7 +267,9 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.84002434960000005" green="0.91867536139999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84002434955133753" green="0.91867536136643513" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="T4R-HM-7ar" kind="show" identifier="infoSegue" id="uZH-MY-Eb0"/>
                                         </connections>
@@ -278,12 +281,12 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.43929044740000001" green="0.61820318890000003" blue="0.92554211620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="vaF-7b-4bo">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="p4P-yy-YKo">
                             <connections>
-                                <segue destination="j2S-AQ-l3v" kind="show" identifier="mapSegue" id="rDf-cP-ij8"/>
+                                <segue destination="Wv5-la-UFB" kind="show" identifier="mapSegue" id="EmM-RM-QqE"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lt5-h8-FUG">
@@ -410,7 +413,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="c4l-PM-bD8" id="MBO-g7-5gG"/>
+                        <outlet property="myMapView" destination="c4l-PM-bD8" id="wvc-26-LGT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufg-4S-uZd" userLabel="First Responder" sceneMemberID="firstResponder"/>

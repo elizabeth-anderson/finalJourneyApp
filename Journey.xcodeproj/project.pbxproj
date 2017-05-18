@@ -18,8 +18,10 @@
 		3F5DA0AE1EA517E9002AFC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DA0AC1EA517E9002AFC05 /* LaunchScreen.storyboard */; };
 		3F5DA0B91EA517E9002AFC05 /* JourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0B81EA517E9002AFC05 /* JourneyTests.swift */; };
 		3F5DA0C41EA517E9002AFC05 /* JourneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0C31EA517E9002AFC05 /* JourneyUITests.swift */; };
-		3F7674CC1EA7B63400BD93CD /* diaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7674CB1EA7B63400BD93CD /* diaryClass.swift */; };
+		3F6776871ECB57360032ACE5 /* PersistentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6776861ECB57360032ACE5 /* PersistentData.swift */; };
 		3F7674CE1EA7B8EA00BD93CD /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */; };
+		3FE3460C1ECA446900F08D05 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3460B1ECA446900F08D05 /* MapViewController.swift */; };
+		3FE3460E1ECA47F600F08D05 /* DiaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3460D1ECA47F600F08D05 /* DiaryObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +59,10 @@
 		3F5DA0BF1EA517E9002AFC05 /* JourneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JourneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5DA0C31EA517E9002AFC05 /* JourneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyUITests.swift; sourceTree = "<group>"; };
 		3F5DA0C51EA517E9002AFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F7674CB1EA7B63400BD93CD /* diaryClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = diaryClass.swift; path = ../diaryClass.swift; sourceTree = "<group>"; };
+		3F6776861ECB57360032ACE5 /* PersistentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentData.swift; sourceTree = "<group>"; };
 		3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		3FE3460B1ECA446900F08D05 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3FE3460D1ECA47F600F08D05 /* DiaryObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiaryObject.swift; path = ../DiaryObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +119,15 @@
 				24378E901EC0CB5000E1134C /* RegisterPageViewController.swift */,
 				24378E921EC0CB6A00E1134C /* ViewController2.swift */,
 				3F5DA0A71EA517E9002AFC05 /* Main.storyboard */,
+				3F5DA0A51EA517E9002AFC05 /* ViewController.swift */,
+				3F6776861ECB57360032ACE5 /* PersistentData.swift */,
+				3FE3460B1ECA446900F08D05 /* MapViewController.swift */,
 				3F4035211EB24AB3001F8F9C /* MapPins.swift */,
+				3FE3460D1ECA47F600F08D05 /* DiaryObject.swift */,
 				3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */,
 				3F5DA0AA1EA517E9002AFC05 /* Assets.xcassets */,
 				3F5DA0AC1EA517E9002AFC05 /* LaunchScreen.storyboard */,
 				3F5DA0AF1EA517E9002AFC05 /* Info.plist */,
-				3F7674CB1EA7B63400BD93CD /* diaryClass.swift */,
 			);
 			path = Journey;
 			sourceTree = "<group>";
@@ -284,6 +291,7 @@
 				24378E8F1EC0CB3F00E1134C /* LogInViewController.swift in Sources */,
 				3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */,
 				3F4035221EB24AB3001F8F9C /* MapPins.swift in Sources */,
+				3F6776871ECB57360032ACE5 /* PersistentData.swift in Sources */,
 				3F7674CE1EA7B8EA00BD93CD /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

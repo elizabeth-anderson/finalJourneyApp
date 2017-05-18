@@ -9,14 +9,15 @@
 
 import UIKit
 
-class detailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class detailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate
+{
     
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var myTextView: UITextView!
     
-    var diaryDetail:diaryClass!
+    var diaryDetail:DiaryClass!
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad()
