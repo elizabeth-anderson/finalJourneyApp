@@ -9,20 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
-
+    
 {
     @IBOutlet weak var myTableView: UITableView!
     
     var myDiaryObject : [DiaryClass] = []
     
-  
+    
     
     override func viewDidLoad()
-    
-    //self.view.backgroundColor = UIColor(patternImage:#imageLiteral(resourceName: "background"))
+        
+        //self.view.backgroundColor = UIColor(patternImage:#imageLiteral(resourceName: "background"))
     {
         super.viewDidLoad()
-        myDiaryObject.append(DiaryObject(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))
+        myDiaryObject.append(DiaryClass(Location: "Florida", Date: "December 2017", Text: "florida was fun.", Image:UIImage(named: "florida")!))
         myDiaryObject.append(DiaryClass(Location: "Indiana", Date: "October 8, 2015", Text: "i love indiana", Image: UIImage(named: "indiana")!))
     }
     
@@ -31,45 +31,45 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         return myDiaryObject
     }
-
+    
     @IBAction func addButtonTapped(_ sender: Any)
     {
-    
-            let alert = UIAlertController(title: "add trip", message: nil, preferredStyle: .alert)
-            
-            alert.addTextField
-            {
-                    (locationTextField) in locationTextField.placeholder = "add location"
-            }
         
-            alert.addTextField
-                {
-                    (dateTextField) in dateTextField.placeholder = "add date"
-            }
-            
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-            
-            alert.addAction(cancelAction)
-            
-            let addAction = UIAlertAction(title: "Add", style: .default)
+        let alert = UIAlertController(title: "add trip", message: nil, preferredStyle: .alert)
+        
+        alert.addTextField
             {
-                (action) in
-                
-                let locationTextField = alert.textFields?[0]
-                
-                let dateTextField = alert.textFields?[1]
-                
-                
-                self.myDiaryObject.append(DiaryClass(Location: (locationTextField?.text)!, Date: (dateTextField?.text)!))
-                
-                self.myTableView.reloadData()
-            }
+                (locationTextField) in locationTextField.placeholder = "add location"
+        }
+        
+        alert.addTextField
+            {
+                (dateTextField) in dateTextField.placeholder = "add date"
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(cancelAction)
+        
+        let addAction = UIAlertAction(title: "Add", style: .default)
+        {
+            (action) in
             
-            alert.addAction(addAction)
+            let locationTextField = alert.textFields?[0]
             
-            present(alert, animated: true, completion: nil)
+            let dateTextField = alert.textFields?[1]
+            
+            
+            self.myDiaryObject.append(DiaryClass(Location: (locationTextField?.text)!, Date: (dateTextField?.text)!))
+            
+            self.myTableView.reloadData()
+        }
+        
+        alert.addAction(addAction)
+        
+        present(alert, animated: true, completion: nil)
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return myDiaryObject.count
@@ -103,26 +103,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if segue.identifier == "infoSegue"
             
         {
-        let detailView = segue.destination as! detailViewController
-        
-        let selectedRow = myTableView.indexPathForSelectedRow?.row
+            let detailView = segue.destination as! detailViewController
             
-        
-        detailView.diaryDetail = myDiaryObject[selectedRow!]
-         }
+            let selectedRow = myTableView.indexPathForSelectedRow?.row
+            
+            
+            detailView.diaryDetail = myDiaryObject[selectedRow!]
+        }
         else if segue.identifier == "mapSegue"
         {
+            //let mapViewController = segue.destination as! MapViewController
             let mapViewController = segue.destination as! MapViewController
+            
+            //ViewController.myDiaryObjectMap = myDiaryObject
             mapViewController.myDiaryObjectMap = myDiaryObject
+            
         }
         
     }
-
+    
     
     override func viewDidAppear(_ animated: Bool)
     {
         myTableView.reloadData()
     }
-
+    
 }
 
