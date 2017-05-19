@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2EF02F1ECDF9A900B404C1 /* DiaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF02E1ECDF9A900B404C1 /* DiaryClass.swift */; };
 		3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */; };
 		3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A51EA517E9002AFC05 /* ViewController.swift */; };
 		3F5DA0A91EA517E9002AFC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A71EA517E9002AFC05 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2EF02E1ECDF9A900B404C1 /* DiaryClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryClass.swift; sourceTree = "<group>"; };
 		3F5DA0A01EA517E9002AFC05 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5DA0A51EA517E9002AFC05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +54,6 @@
 		3F6776861ECB57360032ACE5 /* PersistentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentData.swift; sourceTree = "<group>"; };
 		3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		3FE3460B1ECA446900F08D05 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		3FE3460D1ECA47F600F08D05 /* DiaryObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiaryObject.swift; path = ../DiaryObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */,
-				24378E8E1EC0CB3F00E1134C /* LogInViewController.swift */,
-				24378E901EC0CB5000E1134C /* RegisterPageViewController.swift */,
-				24378E921EC0CB6A00E1134C /* ViewController2.swift */,
 				3F5DA0A71EA517E9002AFC05 /* Main.storyboard */,
 				3F5DA0A51EA517E9002AFC05 /* ViewController.swift */,
 				3F6776861ECB57360032ACE5 /* PersistentData.swift */,
 				3FE3460B1ECA446900F08D05 /* MapViewController.swift */,
-				3FE3460D1ECA47F600F08D05 /* DiaryObject.swift */,
+				3F2EF02E1ECDF9A900B404C1 /* DiaryClass.swift */,
 				3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */,
 				3F5DA0AA1EA517E9002AFC05 /* Assets.xcassets */,
 				3F5DA0AC1EA517E9002AFC05 /* LaunchScreen.storyboard */,
@@ -272,11 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24378E931EC0CB6A00E1134C /* ViewController2.swift in Sources */,
-				24378E911EC0CB5000E1134C /* RegisterPageViewController.swift in Sources */,
 				3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */,
-				24378E8F1EC0CB3F00E1134C /* LogInViewController.swift in Sources */,
 				3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */,
+				3F2EF02F1ECDF9A900B404C1 /* DiaryClass.swift in Sources */,
 				3F6776871ECB57360032ACE5 /* PersistentData.swift in Sources */,
 				3F7674CE1EA7B8EA00BD93CD /* detailViewController.swift in Sources */,
 			);

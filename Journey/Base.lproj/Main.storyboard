@@ -283,6 +283,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.43929044740000001" green="0.61820318890000003" blue="0.92554211620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="5NA-7E-1Sr"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="vaF-7b-4bo">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="p4P-yy-YKo"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lt5-h8-FUG">
@@ -291,6 +294,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="NO"/>
                     </userDefinedRuntimeAttributes>
