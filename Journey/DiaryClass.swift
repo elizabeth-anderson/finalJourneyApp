@@ -1,16 +1,14 @@
 //
-//  diaryClass.swift
+//  DiaryClass.swift
 //  Journey
 //
-//  Created by Elizabeth on 4/19/17.
+//  Created by Elizabeth on 5/18/17.
 //  Copyright © 2017 bhs. All rights reserved.
 //
 
 import UIKit
 
-class DiaryClass: NSObject
-{
-    
+class DiaryClass: NSObject {
     var location = ""
     var date = ""
     var text = ""
@@ -31,4 +29,5 @@ class DiaryClass: NSObject
         location = Location
     }
     
+
 }
