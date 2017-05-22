@@ -259,18 +259,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A2H-qj-BFe" id="mRN-pO-58q">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2fn-3j-03u">
-                                                    <rect key="frame" x="142" y="0.0" width="218" height="43.5"/>
+                                                    <rect key="frame" x="142" y="0.0" width="218" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="indiana" id="qPa-p3-vIY">
-                                                    <rect key="frame" x="15" y="0.0" width="112" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="112" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -295,7 +295,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.43929044740000001" green="0.61820318890000003" blue="0.92554211620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <toolbarItems/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" systemItem="search" id="tTb-kO-GEU">
+                            <connections>
+                                <segue destination="Wv5-la-UFB" kind="showDetail" identifier="mapSegue" id="Kwy-wR-5RT"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="vaF-7b-4bo">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="p4P-yy-YKo"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lt5-h8-FUG">
