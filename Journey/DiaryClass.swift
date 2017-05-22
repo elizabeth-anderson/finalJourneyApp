@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DiaryClass: NSObject {
+class DiaryClass: NSObject
+{
     var location = ""
     var date = ""
     var text = ""
