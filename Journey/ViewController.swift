@@ -122,8 +122,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             //let mapViewController = segue.destination as! MapViewController
             let mapViewController = segue.destination as! MapViewController
             
-            //ViewController.myDiaryObjectMap = myDiaryObject
+            //let vc = self.storyboard?.instantiateViewController(withIdentifier: "mapSegue") as! MapViewController
+            
             mapViewController.myDiaryObjectMap = myDiaryObject
+            //vc.myDiaryObjectMap = self.myDiaryObject
+            
+            //self.present(vc, animated: true, completion: nil)
             
         }
         

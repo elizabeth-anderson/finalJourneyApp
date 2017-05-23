@@ -39,6 +39,7 @@ class detailViewController: UIViewController, UIImagePickerControllerDelegate, U
         diaryDetail.image = myImageView.image!
         diaryDetail.text = myTextView.text!
         diaryDetail.date = dateTextField.text!
+        
     }
     
     func getPhotoLibrary()
