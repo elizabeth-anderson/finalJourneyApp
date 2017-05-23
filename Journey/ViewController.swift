@@ -145,7 +145,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let backgroundImage = UIImage(named: "skyBackground")
             let imageView = UIImageView(image: backgroundImage)
             self.myTableView.backgroundView = imageView
+            /////////////////////////////////////
+            //[NSUserDefaults standardDefaults]
+            //NSString *theText = [textDef stringForKey:"entry"
+            //NSInteger myInt
+            //tableView.text = theText
     }
+//    override func viewWillDisappear(_ animated: Bool)
+//    {
+//        NSString myTableView = myTableView.text
+//        [[NSUserDefaults standardUserDefaults] setObject:myTableView  forKey: "entry"]
+//            
+//        
+//    }
     
 }
 
