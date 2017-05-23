@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Xv-qp-p5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Xv-qp-p5H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -301,7 +301,7 @@
                     <navigationItem key="navigationItem" id="vaF-7b-4bo">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="p4P-yy-YKo">
                             <connections>
-                                <segue destination="Wv5-la-UFB" kind="showDetail" identifier="mapSegue" id="PUs-4m-DAE"/>
+                                <segue destination="KDf-zS-6ST" kind="show" identifier="mapSegue" id="r33-xw-gmV"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lt5-h8-FUG">
@@ -320,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4041" y="-271"/>
+            <point key="canvasLocation" x="4887" y="41"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="sKV-A2-M6g">
@@ -410,36 +410,31 @@
             <point key="canvasLocation" x="5748" y="89.505247376311857"/>
         </scene>
         <!--Map View Controller-->
-        <scene sceneID="mCJ-0N-IPs">
+        <scene sceneID="o1i-Qv-tgy">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wv5-la-UFB" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController id="KDf-zS-6ST" customClass="MapViewController" customModule="Journey" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vya-a0-jh2"/>
-                        <viewControllerLayoutGuide type="bottom" id="PNy-RI-tmW"/>
+                        <viewControllerLayoutGuide type="top" id="7gS-8f-wlx"/>
+                        <viewControllerLayoutGuide type="bottom" id="omX-0G-3OE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rhJ-na-czo">
+                    <view key="view" contentMode="scaleToFill" id="DQf-XF-mZJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iqG-u0-NT7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-8Y-Gy3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iqG-u0-NT7" firstAttribute="top" secondItem="rhJ-na-czo" secondAttribute="top" id="Oci-jc-mSS"/>
-                            <constraint firstItem="PNy-RI-tmW" firstAttribute="top" secondItem="iqG-u0-NT7" secondAttribute="bottom" id="aA7-LQ-RgF"/>
-                            <constraint firstItem="iqG-u0-NT7" firstAttribute="leading" secondItem="rhJ-na-czo" secondAttribute="leading" id="btH-Nh-EUm"/>
-                            <constraint firstAttribute="trailing" secondItem="iqG-u0-NT7" secondAttribute="trailing" id="zXg-6R-Ojb"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="iqG-u0-NT7" id="9Re-hb-RY4"/>
+                        <outlet property="mapView" destination="b7d-8Y-Gy3" id="vmg-yJ-MAH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T5h-TN-Td9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hP0-eU-kkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5625" y="-698"/>
+            <point key="canvasLocation" x="5708" y="-618.44077961019491"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Jl-xk-HWT">

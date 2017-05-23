@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F2EF02F1ECDF9A900B404C1 /* DiaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF02E1ECDF9A900B404C1 /* DiaryClass.swift */; };
-		3F30F1B31ECF83C600101568 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30F1B21ECF83C600101568 /* MapViewController.swift */; };
+		3F30F1B51ED489F900101568 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30F1B41ED489F900101568 /* MapViewController.swift */; };
 		3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */; };
 		3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A51EA517E9002AFC05 /* ViewController.swift */; };
 		3F5DA0A91EA517E9002AFC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DA0A71EA517E9002AFC05 /* Main.storyboard */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3F2EF02E1ECDF9A900B404C1 /* DiaryClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryClass.swift; sourceTree = "<group>"; };
-		3F30F1B21ECF83C600101568 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		3F30F1B41ED489F900101568 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		3F5DA0A01EA517E9002AFC05 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5DA0A51EA517E9002AFC05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 			children = (
 				3F5DA0A31EA517E9002AFC05 /* AppDelegate.swift */,
 				3F5DA0A71EA517E9002AFC05 /* Main.storyboard */,
+				3F30F1B41ED489F900101568 /* MapViewController.swift */,
 				3F5DA0A51EA517E9002AFC05 /* ViewController.swift */,
-				3F30F1B21ECF83C600101568 /* MapViewController.swift */,
 				3F6776861ECB57360032ACE5 /* PersistentData.swift */,
 				3F2EF02E1ECDF9A900B404C1 /* DiaryClass.swift */,
 				3F7674CD1EA7B8EA00BD93CD /* detailViewController.swift */,
@@ -272,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5DA0A61EA517E9002AFC05 /* ViewController.swift in Sources */,
-				3F30F1B31ECF83C600101568 /* MapViewController.swift in Sources */,
+				3F30F1B51ED489F900101568 /* MapViewController.swift in Sources */,
 				3F5DA0A41EA517E9002AFC05 /* AppDelegate.swift in Sources */,
 				3F2EF02F1ECDF9A900B404C1 /* DiaryClass.swift in Sources */,
 				3F6776871ECB57360032ACE5 /* PersistentData.swift in Sources */,

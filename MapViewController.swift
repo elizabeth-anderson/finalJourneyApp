@@ -18,6 +18,9 @@ class MapViewController: UIViewController, MKMapViewDelegate
     var pointAnnotation: MKPointAnnotation!
     var pinAnnotationView: MKPinAnnotationView!
     
+    
+    
+   
     @IBOutlet weak var mapView: MKMapView!
     var myDiaryObjectMap = [DiaryClass]()
     

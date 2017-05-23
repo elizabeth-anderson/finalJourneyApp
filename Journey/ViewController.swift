@@ -143,7 +143,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         override func viewWillAppear(_ animated: Bool)
         {
             //self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
-            super.viewWillAppear(animated)
+            
             
             // Add background view to the table view
             let backgroundImage = UIImage(named: "skyBackground")
